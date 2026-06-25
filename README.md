@@ -1,10 +1,10 @@
 # layout — Pure C Layout Engine
 
-> Inspired by [Clay](https://github.com/nicbarker/clay) and Nic Barker's [YouTube talk](https://www.youtube.com/watch?v=Y4NiGRL-3sQ).
+> Inspired by [Clay](https://github.com/nicbarker/clay) and Nic Barker's [YouTube talk](https://youtu.be/by9lQvpvMIc?si=xDdeJp4s_qov97rw).
 
 **layout** is a minimal, zero-dependency layout engine written from scratch in C. It renders a declarative element tree to a pixel canvas and writes the result as a PPM image — all in under 1,000 lines of clean C99, using nothing beyond `libc` and `libm`.
 
-It is an educational project that demonstrates **hands-on systems programming**: manual memory management, lock-free page-pool allocation, Bresenham-style rasterisation, and a declarative macro DSL that feels like a mini UI framework.
+It is an educational project that demonstrates **hands-on systems programming**: manual memory management, page-based page allocation, Bresenham-style rasterisation, and a declarative macro DSL that feels like a mini UI framework.
 
 ---
 
