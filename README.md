@@ -1,8 +1,8 @@
-# layout — Pure C Layout Engine
+# clayout — Pure C Layout Engine
 
 > Inspired by [Clay](https://github.com/nicbarker/clay) and Nic Barker's [YouTube talk](https://youtu.be/by9lQvpvMIc?si=xDdeJp4s_qov97rw).
 
-**layout** is a minimal, zero-dependency layout engine written from scratch in C. It renders a declarative element tree to a pixel canvas and writes the result as a PPM image — all in under 1,000 lines of clean C99, using nothing beyond `libc` and `libm`.
+**clayout** is a minimal, zero-dependency layout engine written from scratch in C. It renders a declarative element tree to a pixel canvas and writes the result as a PPM image — all in under 1,000 lines of clean C99, using nothing beyond `libc` and `libm`.
 
 It is an educational project that demonstrates **hands-on systems programming**: manual memory management, page-based page allocation, Bresenham-style rasterisation, and a declarative macro DSL that feels like a mini UI framework.
 
@@ -117,7 +117,7 @@ This is **step one**. The engine in its current form proves the concept. Planned
 | Feature | Notes |
 |---------|-------|
 | **More layouts** | Beyond row/column — grid, absolute positioning, flex-like wrapping |
-| **Draw-command export** | Export a flat list of draw commands (`DrawCMD`) for use with external renderers (SDL, OpenGL, Cairo, etc.) instead of the built-in canvas |
+| **Draw-command export** | Export a flat list of draw commands (`DrawCMD`) for use with external renderers (RayLib, SDL, OpenGL, Cairo, etc.) instead of the built-in canvas |
 | **Borders** | Per-element border width, style, and colour |
 | **Alignment** | Cross-axis and main-axis alignment per container |
 | **Text rendering** | Simple bitmap-font rendering for basic UI labels |
